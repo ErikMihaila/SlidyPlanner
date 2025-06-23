@@ -34,7 +34,7 @@
 
 .timer-svg {
     position: fixed;
-    top: 20vw;
+    top: 10vw;
     right: - 10vw;
     width: 400px;
     height: 400px;
@@ -57,7 +57,7 @@
 
 .time-text {
     position: fixed;
-    top: 240px;
+    top: 200px;
     font-size: 4em; 
     font-weight: bold;
     margin-top: -15%; /
@@ -78,7 +78,7 @@
 
 .mode-text {
     position: fixed;
-    top: 320px;
+    top: 280px;
     font-size: 1.2em;
     color: #aaa;
     z-index: 1;
@@ -95,7 +95,7 @@
 
 .controls {
     position: fixed; 
-    top: 500px;
+    top: 450px;
     left: 20px;
     transform: translateX(-50%);
     display: flex;
@@ -133,7 +133,7 @@
 
 .preset-times {
     position: fixed;
-    top: 620px;
+    top: 570px;
     right: 135px;
     display: grid;
     grid-template-columns: repeat(2, 1fr); 
@@ -152,6 +152,12 @@
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
+
+.preset-btn:hover {
+    background-color: #333;
+}
+
+
 
 .preset-btn:hover {
     background-color: #333;
