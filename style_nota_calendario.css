@@ -1,0 +1,59 @@
+#save-note.save-disabled {
+  display: none;  
+}
+
+
+#save-note.save-active {
+  background-color: #28a745; 
+  cursor: pointer;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+.pulse {
+  animation: pulse 0.3s ease;
+}
+
+#saved-notes-list {
+  position: fixed;
+  top: 20px;
+  left: -25px;
+  list-style-type: none; 
+  padding: 0;
+  margin: 15vw ;
+  width: 65vw;
+  height: 77vw;
+  max-height: 60vh; 
+  overflow-y: auto;
+  border-radius: 12px;
+  background-color: transparent; 
+  color: #dbdbdb;
+  font-weight: normal;
+  font-size: 15px;
+  word-wrap: break-word; 
+  overflow-wrap: break-word; 
+  white-space: pre-wrap; 
+}
+
+#saved-notes-list li {
+  padding: 10px 15px;
+  background-color: #2a2a2a; 
+  border-radius: 10px;
+  cursor: default;
+  white-space: pre-wrap; 
+  word-break: break-word; 
+  overflow-wrap: break-word;
+  overflow-x: hidden;
+  margin-bottom: 10px; 
+  padding-bottom: 8px; 
+}
+
+#saved-notes-list li.tachado {
+  text-decoration: line-through;
+  opacity: 0;
+  transition: opacity 1.0s ease, text-decoration 0.5s ease;
+}

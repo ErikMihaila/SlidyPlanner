@@ -1,0 +1,76 @@
+.contenedor-asignaturas {
+  position: fixed;
+  left: 10%;
+  top: 200px;
+  display: grid;
+  grid-template-columns: repeat(3, 100px); 
+  grid-template-rows: repeat(3, 100px);    
+  gap: 20px; 
+  z-index: 1;
+}
+
+.rectangulo1 {
+  position: fixed;
+  top: 158px;
+  left: 104px;
+  width: 50px;
+  height: 66px;
+  background-color: #8bcaee;
+  border-radius: 10px;
+  cursor: pointer;
+
+}
+
+.rectangulo2 {
+  position: fixed;
+  top: 211px;
+  left: 163px;
+  width: 50px;
+  height: 110px;
+  background-color: #eec58b;
+  border-radius: 10px;
+}
+
+.rectangulo3 {
+  position: fixed;
+  top: 319px;
+  left: 104px;
+  width: 50px;
+  height: 110px;
+  background-color: #ee8b8b;
+  border-radius: 10px;
+}
+
+
+.rectangulo4 {
+  position: fixed;
+  top: 426px;
+  left: 221px;
+  width: 50px;
+  height: 85px;
+  background-color: #b48bee;
+  border-radius: 10px;
+}
+
+
+.rectangulo5 {
+  position: fixed;
+  top: 100px;
+  left: 340px;
+  width: 50px;
+  height: 85px;
+  background-color: #afee8b;
+  border-radius: 10px;
+}
+
+
+.rectangulo6 {
+  position: fixed;
+  top: 589px;
+  left: 340px;
+  width: 50px;
+  height: 105px;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+

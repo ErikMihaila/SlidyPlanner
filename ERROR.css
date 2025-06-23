@@ -1,0 +1,28 @@
+.bloqueo {
+  display: none;
+}
+
+
+@media (min-width: 450px) {
+  .bloqueo {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background-color: white;
+    z-index: 9999;
+  }
+
+  .bloqueo .mensaje {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: black;
+    max-width: 90%;
+    font-family: sans-serif;
+  }
+
+
+  body > *:not(.bloqueo) {
+    display: none !important;
+  }
+}

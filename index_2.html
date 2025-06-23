@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+  <meta charset="utf-8">
+  <title>Slidy Planner</title>
+  <link rel="stylesheet" href="ERROR.css">
+  <link rel="stylesheet" href="style_transition.css">
+  <link rel="stylesheet" href="style_index_2.css">
+  <link rel="stylesheet" href="horario.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="LOGO.ico" type="image/x-icon">
+
+  <style>
+    
+  body{
+    background: black;
+    overflow: hidden;
+    font-family: 'Roboto-Regular', sans-serif;
+  }
+
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url('Roboto-Regular.ttf') format('truetype'); 
+  font-weight: normal;
+  font-style: normal;
+}
+
+ </style>
+ </head>
+
+<body>
+
+<div class="bloqueo">
+  <div class="mensaje" style="position: relative; z-index: 0;">
+      <h1>⚠ Slidy Planner no es compatible con su dispositivo ⚠</h1>
+      <p>Este dispositivo no soporta el formato del programa.
+        Por favor inténtelo de nuevo en un dispositivo móvil.</p>
+  </div>
+</div>
+
+<div id="page-content">
+<div id="fecha-cuadro"></div>
+  <div id="tabla-horario-container">
+ <table class="horario">
+    <tbody id="tabla-horario">
+    </tbody>
+  </table>
+</div>
+</div>
+
+ <script src="horario.js"></script>
+ <script src="index_2_fecha.js"></script>
+
+
+
+ <script src="transition.js"></script>
+
+</body>
+  </html>

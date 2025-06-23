@@ -1,0 +1,11 @@
+#fecha-cuadro {
+  position: fixed;
+  top: 10px;
+  left: 12px;
+  margin: 0;
+  padding: 5px 10px;
+  font-size: 22px;
+  font-weight: 600;
+  color: #fff;
+  border-radius: 5px;
+}

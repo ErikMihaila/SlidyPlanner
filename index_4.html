@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+  <meta charset="utf-8">
+  <title>Slidy Planner</title>
+  <link rel="stylesheet" href="ERROR.css">
+  <link rel="stylesheet" href="style_transition.css">
+  <link rel="stylesheet" href="temporizador.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="LOGO.ico" type="image/x-icon">
+
+  <style>
+    
+  body{
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    overflow: hidden;
+    font-family: 'Roboto-Regular', sans-serif;
+  }
+
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url('Roboto-Regular.ttf') format('truetype'); 
+  font-weight: normal;
+  font-style: normal;
+}
+ </style>
+ </head>
+
+<body>
+
+<div class="bloqueo">
+  <div class="mensaje">
+      <h1>⚠ Slidy Planner is not compatible with your device ⚠</h1>
+      <p>This device does not support the format of the app.
+        Please try accessing it from a supported operating system or browser, such as a mobile device or tablet.</p>
+  </div>
+</div>
+
+<div id="page-content">
+
+
+<div class="timer-container">
+        <div class="timer-display">
+            <div class="timer-circle">
+                <svg viewBox="0 0 100 100" class="timer-svg">
+                    <circle class="timer-bg" cx="50" cy="50" r="45"></circle>
+                    <circle class="timer-progress" cx="50" cy="50" r="45"></circle>
+                </svg>
+                <div class="time-text">
+                    <span id="editableHours" contenteditable="true">00</span>:
+                    <span id="editableMinutes" contenteditable="true">00</span>:
+                    <span id="editableSeconds" contenteditable="true">00</span></div> 
+                <span class="mode-text" id="editableMode">ESTUDIO</span>
+            </div>
+            <div class="controls">
+                <button id="playPauseBtn" class="control-btn play">
+                    <img src="PLAY.png" alt="Play/Pause" id="playPauseIcon">
+                </button>
+                <button id="resetBtn" class="control-btn reset">
+                    <img src="RESET.png" alt="Reset">
+                </button>
+            </div>
+        </div>
+
+        <div class="preset-times">
+            <button class="preset-btn" data-time="3600">01:00:00</button>
+            <button class="preset-btn" data-time="300">00:05:00</button>
+            <button class="preset-btn" data-time="600">00:10:00</button>
+            <button class="preset-btn" data-time="30">00:00:30</button>
+        </div>
+    </div>
+</div>
+
+
+<script src="transition.js"></script>
+<script src="temporizador.js"></script>
+
+</body>
+
+
+
+  </html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+  <meta charset="utf-8">
+  <title>Slidy Planner</title>
+  <link rel="stylesheet" href="CALENDARIO.css">
+  <link rel="stylesheet" href="ERROR.css">
+  <link rel="stylesheet" href="style_dia_calendario.css">
+  <link rel="stylesheet" href="style_nota_calendario.css">
+  <link rel="stylesheet" href="pantalla-carga.css"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="LOGO.ico" type="image/x-icon">
+
+  <style>
+
+  body{
+    background: black;
+ 	  overflow: hidden;
+    font-family: 'Roboto-Regular', sans-serif;
+  }
+
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url('Roboto-Regular.ttf') format('truetype'); 
+  font-weight: normal;
+  font-style: normal;
+}
+
+ </style>
+</head>
+
+<body>
+
+<div class="bloqueo">
+  <div class="mensaje">
+      <h1>⚠ Slidy Planner no es compatible con su dispositivo ⚠</h1>
+      <p>Este dispositivo no soporta el formato del programa.
+        Por favor inténtelo de nuevo en un dispositivo móvil.</p>
+  </div>
+</div>
+
+<div id="loading-screen" style="position: fixed; top:0; left:0; width:100vw; height:100vh; background: black; z-index:9999; display:flex; justify-content:center; align-items:center; color:#fff; font-size:2rem;">
+  <img src="LOGO.ico" alt="LOGO" style="position: fixed; top: 250px; width: 200px;">
+  <h1 class="titulo" style="position: fixed; top: 400px; font-size: 40px; font-family: 'Dutch801ExtraBoldBT';">Sliddy : Planner</h1>
+</div>
+
+<script src="pantalla-carga.js"></script>
+
+<div id="page-content">
+  <div class="center-container"> 
+ 	  <div class="calendar">
+        <div class="calendar-header">
+        <h2 id="month-year"></h2>
+     </div>
+        <div class="calendar-days">
+      	  <div>Lun</div>
+      	  <div>Mar</div>
+      	  <div>Mié</div>
+      	  <div>Jue</div>
+      	  <div>Vie</div>
+      	  <div>Sáb</div>
+      	  <div>Dom</div>
+    	</div>
+
+    	  <div class="calendar-dates" id="dates">
+    	  </div>
+  	   </div>
+   </div>
+</div>
+
+<div id="day-modal" class="modal hidden">
+  <div class="modal-content" id="modal-content">
+    <p id="modal-day"></p>
+    
+    <textarea id="note-text" placeholder="Escribe tu nota..."></textarea>
+    <button id="save-note" class="save-disabled">+</button>
+    
+    <div id="saved-notes-section">
+      <ul id="saved-notes-list"></ul>
+    </div>
+  </div>
+</div>
+
+
+<script src="CALENDARIO.js"></script>
+<script src="zoom_dia.js"></script>
+
+ </body>
+</html>

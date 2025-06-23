@@ -1,0 +1,63 @@
+.modal.hidden {
+  display: none;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  backdrop-filter: blur(2px);
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 9999;
+}
+
+.modal-content {
+  position: relative;
+  background: #171717;
+  padding: 10px 30px;
+  border-radius: 15px;
+  width: 70vw;
+  height: 110vw;
+  display: flex;
+  justify-content: left; 
+  align-items: top-left;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  transform: translate(-50%, -50%) scale(1);
+  transition: top 0.5s ease, left 0.5s ease, transform 0.5s ease, opacity 0.3s ease;
+  opacity: 0;
+}
+
+.modal-content textarea {
+  position: fixed;
+  left: 7vw;
+  bottom: 7vw;
+  width: 52vw;
+  height: 8vw;
+  border-radius: 10px;
+  border: 2px solid #3f3f3f;
+  background: #171717;
+  padding: 8px;
+  color: white;
+  resize: none;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.modal-content button {
+  font-size: 25px;
+  position: fixed;
+  bottom: 5.2vw;
+  right: 7vw;
+  width: 12vw;
+  height: 12vw;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  color: white;
+  border-radius: 25px;
+  border: 0;
+  cursor: pointer;
+
+}
+

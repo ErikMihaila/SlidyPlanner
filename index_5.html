@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+  <meta charset="utf-8">
+  <title>Slidy Planner</title>
+  <link rel="stylesheet" href="ERROR.css">
+  <link rel="stylesheet" href="style_transition.css">
+  <link rel="stylesheet" href="diagrama.css">
+  <link rel="stylesheet" href="confetti-btn.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="LOGO.ico" type="image/x-icon">
+
+  <style>
+    
+  body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    overflow: hidden;
+    font-family: 'Roboto-Regular', sans-serif;
+  }
+
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url('Roboto-Regular.ttf') format('truetype'); 
+  font-weight: normal;
+  font-style: normal;
+}
+ </style>
+ </head>
+
+<body>
+
+<div class="bloqueo">
+  <div class="mensaje">
+      <h1>⚠ Slidy Planner is not compatible with your device ⚠</h1>
+      <p>This device does not support the format of the app.
+        Please try accessing it from a supported operating system or browser, such as a mobile device or tablet.</p>
+  </div>
+</div>
+
+ <div id="page-content">
+
+    <div class="header" id="current-date"></div>
+
+    <div class="chart-container">
+        <canvas id="completionChart" width="350" height="350"></canvas>
+        <div class="percentage-display" id="completionPercentage"></div>
+    </div>
+
+    <div class="message">
+        <span id="completionMessage"></span>
+    </div>
+
+    <button id="confettiButton">PÚLSAME</button>
+
+    <div id="confettiContainer" class="confetti-container"></div>
+
+</div>
+
+
+<script src="transition.js"></script>
+<script src="task-progress.js"></script>
+<script src="confetti-btn.js"></script>
+
+</body>
+
+
+
+  </html>

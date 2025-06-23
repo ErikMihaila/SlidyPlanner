@@ -1,0 +1,73 @@
+table.horario {   
+  position: fixed;
+  top: 65px;
+  left: 20px;
+  right: 20px;
+  height: 85vh;
+  border-collapse: separate;
+  border-spacing: 0;
+  color: white;
+  margin: 0;  
+}
+
+table.horario td {
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 10px;
+  text-align: left;
+  white-space: pre-wrap; 
+  word-break: break-word; 
+  overflow-wrap: break-word;
+  overflow: hidden;
+}
+
+table.horario td:first-child{
+  background: #2a2a2a;
+  padding-right: 8px; 
+  padding-left: 8px;
+  width: 80px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+table.horario td:nth-child(2) {
+    border-bottom: 2px dashed #494949;
+    border-radius: 0px;
+    width: 80%;
+  }
+
+.horario td.hora-actual {
+  border-radius: 20px;
+  font-weight: bold;
+  color: #686868;
+}
+
+@keyframes slideOutLeft {
+  from { transform: translateX(0); opacity: 1; }
+  to { transform: translateX(-100%); opacity: 0; }
+}
+@keyframes slideOutRight {
+  from { transform: translateX(0); opacity: 1; }
+  to { transform: translateX(100%); opacity: 0; }
+}
+@keyframes slideInLeft {
+  from { transform: translateX(-100%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+@keyframes slideInRight {
+  from { transform: translateX(100%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+.slide-out-left {
+  animation: slideOutLeft 0.4s forwards;
+}
+.slide-out-right {
+  animation: slideOutRight 0.4s forwards;
+}
+.slide-in-left {
+  animation: slideInLeft 0.4s forwards;
+}
+.slide-in-right {
+  animation: slideInRight 0.4s forwards;
+}

@@ -1,0 +1,139 @@
+.oculto {
+  display: none;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(2px);
+  z-index: 998;
+}
+
+.ventana-asignatura {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2a2a2a;
+  border-radius: 20px;
+  z-index: 999;
+  transform-origin: top left;
+  transition:
+    top 0.4s ease,
+    left 0.4s ease,
+    width 0.4s ease,
+    height 0.4s ease,
+    border-radius 0.4s ease,
+    background-color 0.4s ease;
+  overflow: hidden;
+}
+
+.ventana-asignatura .contenido {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.3s ease 0.2s, transform 0.3s ease 0.2s;
+  pointer-events: none;
+}
+
+.ventana-asignatura.mostrar-contenido .contenido {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.contenido {
+  position: fixed;
+  top: 20px;
+  left: 5px;
+  width: 300px;
+}
+
+.asignatura {
+  position: fixed;
+  top: 250px;
+  left: 80px;
+  background-color: #8bcaee;
+  border-radius: 20px;
+  font-weight: bold;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+}
+
+.nombre {
+  position: fixed;
+  top: 300px;
+  left: 100px;
+  color: white;
+  border-radius: 20px;
+  font-weight: bold;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+}
+
+.fecha-hora {
+  position: fixed;
+  top: 350px;
+  left: 80px;
+  background-color: #8bcaee;
+  border-radius: 20px;
+  font-weight: bold;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+}
+
+.fechahora {
+  position: fixed;
+  top: 400px;
+  left: 100px;
+  color: white;
+  border-radius: 20px;
+  font-weight: bold;
+  padding: 10px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 15px;
+}
+
+.informacion {
+  position: fixed;
+  top: 465px;
+  left: 80px;
+  background-color: #8bcaee;
+  border-radius: 20px;
+  font-weight: bold;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+}
+
+.clase {
+  position: fixed;
+  top: 510px;
+  left: 100px;
+  color: white;
+  border-radius: 20px;
+  font-weight: bold;
+  padding: 10px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 15px;
+}
