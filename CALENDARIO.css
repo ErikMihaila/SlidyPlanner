@@ -1,6 +1,6 @@
 
 .center-container {
-  height: calc(90vw - 10px); 
+  height: calc(100vw - 10px); 
   width: calc(100vw - 10px); 
   min-height: 150vw;
   display: flex;
@@ -12,8 +12,7 @@
 .calendar {
   background: transparent;  
   border-radius: 10px;
-  width: calc(100vw - 10px); 
-  min-height: 150vw;
+  width: calc(90vw - 10px); 
   margin: 0 5px;
   user-select: none;
   touch-action: pan-y;
@@ -35,7 +34,6 @@
   top: 15px;
   left: 20px;
   margin: 0;
-  font-weight: 600;
   color: white;
 }
 
@@ -47,7 +45,7 @@
   text-align: center;
   font-weight: bold;
   color: rgba(255, 255, 255, 0.4);
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .calendar-dates {
@@ -56,7 +54,7 @@
   gap: 2px;
   text-align: center;
   font-size: 12px;
-  min-height: calc(90vw);
+  min-height: calc(140vw - 10px);
   color: white;
 }
 
@@ -118,6 +116,8 @@
   from { transform: translateX(100%); opacity: 0; }
   to { transform: translateX(0); opacity: 1; }
 }
+
+
 
 
 
