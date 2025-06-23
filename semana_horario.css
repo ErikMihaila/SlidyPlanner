@@ -8,7 +8,7 @@
 
 .semana {
   position: fixed;
-  top: 20px;
+  top: 10px;
   right: 15px;
   width: 100vw;
   display: flex;
@@ -22,7 +22,7 @@
 
 .numeros {
   position: fixed;
-  top: 100px;
+  top: 50px;
   left: 15px;
   height: calc(100vh - 150px); 
   display: flex;
