@@ -2,7 +2,7 @@
 .center-container {
   height: calc(100vw - 10px); 
   width: calc(100vw - 10px); 
-  max-height: 150vw;
+  max-height: 200vw;
   display: flex;
   justify-content: center; 
   align-items: flex-start;
