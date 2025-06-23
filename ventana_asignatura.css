@@ -15,6 +15,7 @@
 
 .ventana-asignatura {
   position: fixed;
+  top: 0px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -47,14 +48,14 @@
 
 .contenido {
     position: fixed;
-    top: 20px;
+    top: 10px;
     left: 5px;
     width: 350px;
 }
 
 .asignatura {
     position: fixed;
-    top: 250px;
+    top: 170px;
     left: 80px;
     background-color: black;
     border-radius: 20px;
@@ -69,7 +70,7 @@
 
 .nombre {
     position: fixed;
-    top: 300px;
+    top: 220px;
     left: 100px;
     color: white;
     border-radius: 20px;
@@ -83,7 +84,7 @@
 
 .fecha-hora {
     position: fixed;
-    top: 350px;
+    top: 270px;
     left: 80px;
     background-color: black;
     color: white;
@@ -98,7 +99,7 @@
 
 .fechahora {
     position: fixed;
-    top: 400px;
+    top: 320px;
     left: 100px;
     color: white;
     border-radius: 20px;
@@ -113,7 +114,7 @@
 
 .informacion {
     position: fixed;
-    top: 465px;
+    top: 390px;
     left: 80px;
     background-color: black;
     color: white;
@@ -128,7 +129,7 @@
 
 .clase {
     position: fixed;
-    top: 510px;
+    top: 440px;
     left: 100px;
     color: white;
     border-radius: 20px;
@@ -140,6 +141,8 @@
     align-items: flex-start;
     font-size: 15px;
 }
+
+
 
 
 
