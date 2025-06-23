@@ -1,6 +1,6 @@
 
 .center-container {
-  height: calc(100vw - 10px); 
+  height: calc(200vw - 10px); 
   width: calc(100vw - 10px); 
   max-height: 200vw;
   display: flex;
