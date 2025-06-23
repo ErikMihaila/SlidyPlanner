@@ -54,10 +54,9 @@
   gap: 2px;
   text-align: center;
   font-size: 12px;
-  min-height: calc(160vw - 10px);
+  min-height: calc(200vw - 10px);
   color: white;
 }
-
 .calendar-dates div {
   position: relative;
   padding: 6px 4px; 
