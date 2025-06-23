@@ -2,17 +2,18 @@
 .center-container {
   height: calc(100vw - 10px); 
   width: calc(100vw - 10px); 
-  min-height: 100vh;
+  min-height: 100vw;
   display: flex;
   justify-content: center; 
   align-items: flex-start;
+
 }
 
 .calendar {
   background: transparent;  
   border-radius: 10px;
   width: calc(100vw - 10px); 
-  margin: 0 10px;
+  margin: 0 5px;
   user-select: none;
   touch-action: pan-y;
   box-sizing: border-box;
@@ -30,7 +31,7 @@
 
 .calendar-header h2 {
   position: absolute;
-  top: 20px;
+  top: 15px;
   left: 20px;
   margin: 0;
   color: white;
@@ -51,7 +52,6 @@
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   gap: 2px;
-  margin-bottom: 10px;
   text-align: center;
   font-size: 12px;
   max-height: calc(100vw - 10px);
@@ -62,7 +62,7 @@
   position: relative;
   padding: 6px 4px; 
   margin: 0;
-  border-radius: 10px;
+  border-radius: 6px;
   transition: background 0.3s;
   display: flex;
   flex-direction: column;
@@ -116,6 +116,9 @@
   from { transform: translateX(100%); opacity: 0; }
   to { transform: translateX(0); opacity: 1; }
 }
+
+
+
 
 
 
