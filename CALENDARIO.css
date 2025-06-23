@@ -1,7 +1,8 @@
 
 .center-container {
-  height: calc(100vw); 
-  width: calc(100vw); 
+  height: calc(100vw - 10px); 
+  width: calc(100vw - 10px); 
+  min-height: 100vw;
   display: flex;
   justify-content: center; 
   align-items: flex-start;
@@ -48,12 +49,14 @@
 }
 
 .calendar-dates {
+  position: fixed;
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   gap: 2px;
   text-align: center;
   font-size: 12px;
-  max-height: calc(100vw - 10px);
+  height: 150vw;
+  width: 90vw;
   color: white;
 }
 
@@ -115,6 +118,9 @@
   from { transform: translateX(100%); opacity: 0; }
   to { transform: translateX(0); opacity: 1; }
 }
+
+
+
 
 
 
