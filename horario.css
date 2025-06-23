@@ -31,7 +31,7 @@ table.horario td:first-child{
 table.horario td:nth-child(2) {
     border-bottom: 2px dashed #494949;
     border-radius: 0px;
-    width: 80%;
+    width: 100%;
   }
 
 .horario td.hora-actual {
