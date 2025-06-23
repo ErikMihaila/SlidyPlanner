@@ -50,10 +50,10 @@
 .calendar-dates {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  gap: 2px 2px;
+  gap: 2px;
   text-align: center;
   font-size: 12px;
-  max-height: calc(100vw - 10px);
+  max-height: calc(300vw - 10px);
   color: white;
 }
 
