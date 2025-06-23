@@ -11,9 +11,8 @@ table.horario {
 }
 
 table.horario td {
-  border: 2px solid black;
+  border: 1px solid black;
   border-radius: 20px;
-  padding: 0px;
   text-align: left;
   white-space: pre-wrap; 
   word-break: break-word; 
@@ -27,6 +26,7 @@ table.horario td:first-child{
   padding-left: 8px;
   width: 80px;
   text-align: center;
+  font-size: 14px;
   white-space: nowrap;
 }
 
