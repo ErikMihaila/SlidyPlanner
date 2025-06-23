@@ -2,7 +2,6 @@
 .center-container {
   height: calc(100vw); 
   width: calc(100vw); 
-  min-height: 100vw;
   display: flex;
   justify-content: center; 
   align-items: flex-start;
