@@ -13,7 +13,7 @@ table.horario {
 table.horario td {
   border: 2px solid black;
   border-radius: 20px;
-  padding: 5px;
+  padding: 0px;
   text-align: left;
   white-space: pre-wrap; 
   word-break: break-word; 
