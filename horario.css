@@ -6,27 +6,25 @@ table.horario {
   height: 85vh;
   border-collapse: separate;
   border-spacing: 0;
-  color: white;
-  margin: 0;  
+  color: white; 
 }
 
 table.horario td {
-  border: 1px solid black;
+  border: 3px solid black;
   border-radius: 20px;
   text-align: left;
   white-space: pre-wrap; 
   word-break: break-word; 
   overflow-wrap: break-word;
   overflow: hidden;
+  font-size: 14px; 
 }
 
 table.horario td:first-child{
   background: #2a2a2a;
-  padding-right: 8px; 
-  padding-left: 8px;
-  width: 80px;
+  padding-right: 10px; 
+  padding-left: 10px;
   text-align: center;
-  font-size: 14px;
   white-space: nowrap;
 }
 
